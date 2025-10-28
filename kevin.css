@@ -23,6 +23,8 @@ li a {
     text-decoration: none;
     text-align: center;
     color: black;
+    font: 1em sans-serif;
+    font-weight: semibold;
 }
 
 .logo {
