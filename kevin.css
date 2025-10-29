@@ -1,9 +1,10 @@
 nav {
     background: linear-gradient(#fe9e78, #ee294b);
-    border-radius: 10px;
+    border-radius: 0px 0px 10px 10px ;
     padding-bottom: 10px;
+    height: 8em;
 }
-ul {
+.list-nav {
     margin: 0;
     padding: 0;
     overflow: hidden;
@@ -12,7 +13,7 @@ ul {
     justify-content: space-around;
     
 }
-li {
+.list-nav>li {
     float: left;
     border-left: black;
     border: 2px;
@@ -53,12 +54,36 @@ li a {
     border-color: black;
     border: 20;
 }
-li>img {
-    width: 2em;
-    height: 1.5em;
+.cart {
+    width: 4em;
+    height: 3em;
     padding: 10px;
     margin-top: 0.5em;
 }
-li>img:hover {
+.cart:hover {
     margin-top: 0.3em;
+}
+.desplegable {
+    display: none;
+    position: absolute;
+    width: 15%;
+    height: fit-content;
+    background-color: ghostwhite;
+    border: 2px;
+    border-color: black;
+    padding: 0.5em;
+
+}
+.desplegable>ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.desplegable>ul>li{
+    margin-top: 5px;
+}
+.btn-desplegable:hover{
+    .desplegable{
+        display: block;
+    }
 }
