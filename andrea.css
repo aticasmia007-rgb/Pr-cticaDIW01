@@ -1,0 +1,97 @@
+
+
+
+
+
+
+#ImagenTitulo {
+    text-align: center;
+}
+#imgtitulo {
+    width: 50em;
+    height: 15em;
+}
+#carrousel {
+    text-align: center;
+}
+
+button {
+    border-radius: 100%;
+    border: 0;  /*Sin borde para que se vean los puntos como en el Carrousel*/
+    width: 1em;
+    height: 1em;
+    margin: 1% 1% 5%;
+    background-color: #F39F9F;
+    
+}
+button:hover {
+    background-color: #CD2C58; 
+}
+
+button:first-child {
+    background-color: #CD2C58;
+}
+
+
+#father {
+    width: 100%; /*Para que ocupe todo el ancho*/
+    min-height: 100px;
+    margin: auto;
+    text-align: center; /*Tambien funciona con justify*/
+    
+    
+}
+.item {
+     background-color: white;
+     border-radius: 0.5em;
+     width: 11em;
+     min-height: fit-content;
+     display: inline-block; /*Si lo pongo (inline block) en el father no funciona!!!*/
+     box-shadow: 2px 2px 5px grey; /*x y desenfoque color*/
+     margin:0 3%; /*Esto es interesante*/
+     overflow: auto;
+     padding: 0.5em; /*Esto realmente estaría bien?*/
+     text-align : left; 
+}
+
+.tituloItem {
+    font-family: Times New Roman;
+    display: inline-block; /*Para alinearlo con la foto! */
+    
+}
+
+.logo { 
+    width:40px;
+    height:40px;
+    display: inline-block;
+    vertical-align: middle; /*ESTO LA VERDAD QUE NO LO ENTIENDO MUCHO.. BUENO SÍ, PERO NO SÉ SI PONERLO*/
+    margin-left: 25%;  /*Para separar el corazóndando mucho margin en el left*/
+    
+    
+    
+}
+
+.imgitems {
+    margin: 0 20%;
+    width: 6em;
+    height: 7em; 
+}
+.textitoItem {
+   font-family: Geneva;
+   margin-bottom: -10%; /*PREGUNTAR SI ESTO ES TEORICAMENTE CORRECTO; PORQUE CLARO ENTIENDO QUE ES QUE AL SOLAPARSE HAY MUCHO MARGEN DEL ELEMENTO INFERIOR???*/
+}
+
+
+
+.precioSinR {
+    display: inline-block;
+    text-decoration: line-through;
+    
+}
+
+.precio {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 1em;
+}
+
