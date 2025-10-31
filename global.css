@@ -8,3 +8,25 @@ html, body {
     padding: 0;
     font-family: Arial, sans-serif;
 }
+
+body {
+    background: linear-gradient(#fffffe, #fffffe, #fee4bc);
+}
+
+
+footer .col {
+    display: inline-block;
+    width: calc(99%/2);
+    padding: 15px;
+    border-top: 1px solid #3f3f3f;
+}
+footer .col .two {
+    margin: 1em;
+}
+footer .col .two a {
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    width: calc(99% / 2);
+    text-align: center;
+}

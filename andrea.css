@@ -1,21 +1,16 @@
-
-
-
-
-
-
 #ImagenTitulo {
     text-align: center;
+    width: 100%;
 }
 #imgtitulo {
-    width: 50em;
-    height: 15em;
+    width: 100%;
+    height: auto;
 }
 #carrousel {
     text-align: center;
 }
 
-button {
+#carrousel>button {
     border-radius: 100%;
     border: 0;  /*Sin borde para que se vean los puntos como en el Carrousel*/
     width: 1em;
@@ -24,11 +19,11 @@ button {
     background-color: #F39F9F;
     
 }
-button:hover {
+#carrousel>button:hover {
     background-color: #CD2C58; 
 }
 
-button:first-child {
+#carrousel>button:first-child {
     background-color: #CD2C58;
 }
 
@@ -41,40 +36,55 @@ button:first-child {
     
     
 }
-.item {
+#father .item {
      background-color: white;
      border-radius: 0.5em;
-     width: 11em;
-     min-height: fit-content;
+     width: 15em;
+     min-height: 20em;
      display: inline-block; /*Si lo pongo (inline block) en el father no funciona!!!*/
      box-shadow: 2px 2px 5px grey; /*x y desenfoque color*/
-     margin:0 3%; /*Esto es interesante*/
+     margin:1em 1em; /*Esto es interesante*/
      overflow: auto;
-     padding: 0.5em; /*Esto realmente estaría bien?*/
+     padding: 2em 1.5em; /*Esto realmente estaría bien? NO */
      text-align : left; 
+     transition: ease-out 0.15s;
+     
 }
 
-.tituloItem {
-    font-family: Times New Roman;
+#father .item:hover {
+    transform: scale(1.1);
+}
+
+#father .item .card-header {
+    font-size: 16px;
+}
+
+#father .item .card-header .tituloItem {
     display: inline-block; /*Para alinearlo con la foto! */
-    
+    margin: 0;
+    font-family: Times New Roman;
+    margin: calc(25px - 1em) 0;
 }
 
-.logo { 
-    width:40px;
-    height:40px;
-    display: inline-block;
-    vertical-align: middle; /*ESTO LA VERDAD QUE NO LO ENTIENDO MUCHO.. BUENO SÍ, PERO NO SÉ SI PONERLO*/
-    margin-left: 25%;  /*Para separar el corazóndando mucho margin en el left*/
-    
-    
-    
+#father .item .card-header .iconFavorite { 
+    width: 40px;
+    height: 40px;
+    display: block;
+    /* vertical-align: middle; */
+    /*ESTO LA VERDAD QUE NO LO ENTIENDO MUCHO.. BUENO SÍ, PERO NO SÉ SI PONERLO*/
+    /* margin-left: 25%;*/
+    /*Para separar el corazóndando mucho margin en el left*/
+    float: right;
 }
-
+.card-imagen {
+    padding: 10%;
+    width: 100%;
+}
 .imgitems {
-    margin: 0 20%;
-    width: 6em;
-    height: 7em; 
+    display: block;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: contain;  
 }
 .textitoItem {
    font-family: Geneva;
@@ -86,6 +96,7 @@ button:first-child {
 .precioSinR {
     display: inline-block;
     text-decoration: line-through;
+    color: darkgray;
     
 }
 

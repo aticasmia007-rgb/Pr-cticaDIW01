@@ -3,6 +3,10 @@ nav {
     border-radius: 0px 0px 10px 10px ;
     padding-bottom: 10px;
     height: 9em;
+    position: sticky;
+    top: 0;
+    z-index: 1234;
+    box-shadow: 1px 2px 5px rgba(109, 18, 33, 0.4);
 }
 .list-nav {
     margin: 0;
@@ -21,7 +25,8 @@ li a {
     padding: 16px;
     text-decoration: none;
     text-align: center;
-    color: black;
+    color: #4d010d;
+    /*color: #190004;*/
     font: 1em sans-serif;
     font-weight: semibold;
 }
@@ -36,13 +41,13 @@ li a {
 
 .lupa {
     position: relative;
-    right: 20;
-    top: 2;
+    right: 25;
+    top: 3;
     width: 1em;
     height: 1em;
 }
 .busqueda {
-    padding-top: 1em;
+    padding-top: 0.75em;
     
 }
 .busqueda>input{
@@ -53,10 +58,11 @@ li a {
     border: 20;
 }
 .cart {
-    width: 3.5em;
+    width: 3.00001em;
     height: 3em;
     padding: 10px;
     margin-top: 0.5em;
+    translate: 0px -10px;
     transition: transform 0.3s ease;
 }
 .cart:hover {
@@ -82,6 +88,11 @@ li a {
 }
 .desplegable>ul>li{
     margin-top: 5px;
+    border-radius: 5px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    padding-right: 2.5em;
+    padding-left: 5px;
 }
 .btn-desplegable:hover{
     .desplegable{
@@ -104,9 +115,9 @@ li a {
 
 .nav-items-raya {
     position: relative;
-    top: 20;
+    top: 18;
     background-color: black;
     width: 2px;
     height: 1em;
-    border-radius: 100%;
+    border-radius: 50%;
 }
